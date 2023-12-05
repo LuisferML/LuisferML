@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>SvLogin</servlet-name>
+        <servlet-class>com.curso.asoweb.servlets.SvLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvCrearSocio</servlet-name>
+        <servlet-class>com.curso.asoweb.servlets.SvCrearSocio</servlet-class>
+    </servlet>
+    
+<!--    <servlet>
+        <servlet-name>SvListaSocios</servlet-name>
+        <servlet-class>com.curso.asoweb.servlets.SvListaSocios</servlet-class>
+    </servlet>-->
+    
+    <servlet-mapping>
+        <servlet-name>SvLogin</servlet-name>
+        <url-pattern>/SvLogin</url-pattern>
+        <url-pattern>/login-servlet</url-pattern>
+    </servlet-mapping>
+   
+    <servlet-mapping>
+        <servlet-name>SvCrearSocio</servlet-name>
+        <url-pattern>/SvCrearSocio</url-pattern>
+    </servlet-mapping>
+    
+<!--    <servlet-mapping>
+        <servlet-name>SvListaSocios</servlet-name>
+        <url-pattern>/SvListaSocios</url-pattern>
+    </servlet-mapping>-->
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
